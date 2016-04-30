@@ -6,7 +6,7 @@ describe('travis test specs', function () {
 
   it('should pass', function () {
     console.log('it should be executed - 2');
-    expect(1).toBeDefined();
+    expect().toBeDefined();
   });
 
   xit('should not pass', function () {
