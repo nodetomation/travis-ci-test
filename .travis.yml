@@ -1,7 +1,10 @@
 language: node_js
 node_js:
-  - "5.1"
+- '5.1'
 before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - sleep 3 # give xvfb some time to start
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- sleep 3
+notifications:
+  slack:
+    secure: LjScPzjluzmOipDhdknPa2LI3cm+T0tJaKPkvJhS4oNnMOlOjoDVaI9W05SHGMus7tRWe+QmbAGTEYTcl192kzGKz7ut4YHbOIAdp/dIF/0/plcReCnEPjCsuo5amCYaHckEIBwbcsK1BZBFlXCPsR/ix2tvfSugojyU8lxFTtsxifjw7f3mTbjP/MoNzz+I58lontP3DnlJsk7jBgWq6H4MXEGww6ws3tdH9APF7OjJlJSDviDSEks2e/sPWwDNCjgNFz99B56RjRiHTCpnhlFOO/rg3d01jwyYFv1MpphtKjVmAI7ZM4ZXazhwIOtDefW+GARK7npPwZGJuZ/T08euW17RwMpNt/+wgtm9VYSMLXFBu2HMRJXzkKj+rmTK1bywA6hlxEolMDUXF/utSfN/Qr/6pMr5vRZHFucrpqi3wsuUzZZP6bTfBYCJBGQ/gA2SnSTPmBgWtXe+X0oaU3C6s3AP2nqYkYJ+xx+Z0l16DXbIYxdZcymbinKLnImyxnTENrsUaLPsuIxmEUX6VHiuD34ze9vseXBvue+MMBuvl++Fy/iKjdychCxjAfb75zsXpXxKpAL3QtWuSWnJZHDK+LR1JWkz5LyKcfLp3fLLc8RttZnF8hQM6mZKT/zmes2otj7lKFoCslgJYRyHKLweAGupcHAzV0nJda+eJz4=
